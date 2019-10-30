@@ -1,4 +1,10 @@
 # sui
+
+文档流
+脱里文档流
+html实质：3维的， 有z轴
+重叠:z-index
+默认：绝对定位、fix会显示在最上层, 文档流会显示在最下层
 ```
 属性选择器
 ^=
@@ -102,7 +108,7 @@ a:hover{
 <div></div>
 <table>
     <tr>
-        <td>删选功能的伪类</td>
+        <td>筛选功能的伪类</td>
         <td>meaning</td>
     </tr>
     <tr>
@@ -169,3 +175,27 @@ a:hover{
         <td>为光标选中的元素添加样式</td>
     </tr>
 </table>
+
+tips:
+
+1. 为元素选择器构造的元素是虚拟的，所有不能用js来操控
+2. 如果同时使用了before和first-letter两个伪类，第一个是要从before里的内容开始算的，如果before里面的内容是一个非文本内容，那first-letter也会作用在这个非文本内容元素上，但是不一定生效
+3. first-line和first-letter不适用于内联元素，在内联元素里2个都会失效
+4. 在css3中，规定伪类用单个的`:`表示，伪元素用2个冒号`::`表示。但实际上除了`::selection`,其他4个伪元素选择器在css2中都存在且用的是`:`单引号，为了向下兼容，现在浏览器中的伪元素单引号，双引号都ok，在没有兼容的情况下，建议大家都按照css3标准来开发
+
+### font-size vs line-height
+
+![](../imgs/1.png)
+
+![](../imgs/2.png)
+
+### 良好的css书写规范
+- 注释
+- 属性
+
+### 屏幕适配，字体统一
+不同分辨率下html: font-size: xxrem
+
+### 字体图标
+http://fontawesome.dashgame.com/
+

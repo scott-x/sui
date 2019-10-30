@@ -1,0 +1,23 @@
+{
+  "name": "sui",
+  "version": "1.0.0",
+  "description": "文档流 脱里文档流 html实质：3维的， 有z轴 重叠:z-index 默认：绝对定位、fix会显示在最上层, 文档流会显示在最下层 ``` 属性选择器 ^= $= ~= 包含 |= *= 也是包含，范围更广，eg 选择所有属性带disable字符串的元素 ``` 子孙后代： 子就是子(a>b), 后代 （a b）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scott-x/sui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scott-x/sui/issues"
+  },
+  "homepage": "https://github.com/scott-x/sui#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
