@@ -2,5 +2,13 @@
 * @Author: scottxiong
 * @Date:   2019-10-30 17:41:10
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2019-10-30 17:41:10
+* @Last Modified time: 2019-10-31 11:49:43
 */
+/* body默认样式 */
+body{
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}

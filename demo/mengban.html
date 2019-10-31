@@ -1,0 +1,57 @@
+<!-- https://www.cnblogs.com/xiaochongchong/p/5364422.html -->
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="assets/css/style1.css?v=1.0">
+<style type="text/css">
+#masking-bg{background-color:#CCC; width: 100%; height: 100%; left: 0; top: 0; z-index: 1; position: absolute; filter: alpha(opacity=80); opacity: 0.6;display: none;}
+#masking-layer{display: none;height:500px;width:100%;position:absolute;top:0;}
+#masking-layer div{position: absolute;z-index: 1000;}
+.close{left:80%;top:15%;z-index:1001 !important;}
+.close img{width:30px;}
+.masking-banner{top:10%;text-align:center;width:100%;}
+.masking-banner .img-bg{width:100%;}
+.masking-banner .img {position:absolute;z-index:1001;left:40%;top:35%;width:25%;}
+.masking-banner div{position:absolute;z-index:1001;left:25%;top:70%;width:50%;}
+.skip{left:38%; top:80%; color:#fff; text-align:center;width:100%;} 
+.index-sure{background-color:#ce1c40;color:#FFF;padding:10px 20px;text-align: center;border-radius:5px;display:block;width:25%;}
+</style> 
+</head> 
+<body> 
+    <section onclick="showMasking()" style="display:block; cursor:pointer"> 
+    弹出蒙板 
+    </section>
+    
+    <div id="masking-bg"> 
+    </div> 
+    <div id="masking-layer">
+        <div class="close"onclick="closeMasking()">
+               <img  src="assets/images/common/X.png"/>
+        </div>
+        <div class="masking-banner">
+            <img class="img-bg" src="assets/images/common/winning.png"/>
+            <img class="img" src="assets/images/common/iphoneImg.png"/>
+            <div style="font-size:10px;"><span>（第1愿 ）Apple iPhone6S Plus 64 颜色随机 唯一的不同，就是处处不同 </span></div>
+        </div>
+        <div class="skip"> 
+            <div class="index-sure font-13"> 
+            确定
+            </div> 
+        </div>
+        
+     </div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script>
+    $('#masking-layer').height($(window).height());
+    function showMasking(){
+        $('#masking-bg').css('display','block');
+        $('#masking-layer').css('display','block');
+    }
+    function closeMasking(){
+        $('#masking-bg').css('display','none');
+        $('#masking-layer').css('display','none');
+    }
+</script>
+</body> 
+</html> 

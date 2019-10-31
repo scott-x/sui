@@ -1,0 +1,14 @@
+/*
+* @Author: scottxiong
+* @Date:   2019-10-31 11:46:21
+* @Last Modified by:   scottxiong
+* @Last Modified time: 2019-10-31 15:09:25
+*/
+/* 内容区 */
+.tt-content{
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+    padding-top: 2.3rem;
+    padding-bottom: 2.5rem;
+}
