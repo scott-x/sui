@@ -2,9 +2,12 @@
 * @Author: scottxiong
 * @Date:   2019-10-30 17:40:47
 * @Last Modified by:   scottxiong
-* @Last Modified time: 2019-10-30 18:00:40
+* @Last Modified time: 2019-10-31 10:21:29
 */
+
 /* css reset */
 @import './reset.css';
 /* 公共样式 */
 @import './common.css';
+/*icon*/
+@import './icon.css';
